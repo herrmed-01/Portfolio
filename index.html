@@ -211,40 +211,37 @@
 <section class="contact" id="contact">
     <h2 class="section-title">Contact Me</h2>
 
-        <form class="contact-form" action="https://formsubmit.co/mohamed.elwardi161@gmail.com" method="POST">
-    
-            <!-- Désactiver le captcha -->
-            <input type="hidden" name="_captcha" value="false">
-    
-            <!-- Redirection après envoi (optionnel) -->
-            <!-- <input type="hidden" name="_next" value="https://tonsite.com/merci.html"> -->
-    
-            <!-- Format du mail -->
-            <input type="hidden" name="_template" value="table">
-    
-            <div class="form-group">
-                <label class="form-label">Name</label>
-                <input type="text" name="name" class="form-input" required>
-            </div>
-    
-            <div class="form-group">
-                <label class="form-label">Email</label>
-                <input type="email" name="email" class="form-input" required>
-            </div>
-    
-            <div class="form-group">
-                <label class="form-label">Subject</label>
-                <input type="text" name="subject" class="form-input" required>
-            </div>
-    
-            <div class="form-group">
-                <label class="form-label">Message</label>
-                <textarea name="message" class="form-textarea" rows="5" required></textarea>
-            </div>
-    
-            <button type="submit" class="submit-btn">Send Message</button>
-        </form>
-    </section>
+    <form action="https://formsubmit.co/TON_EMAIL@gmail.com" method="POST" class="contact-form">
+
+        <!-- Sécurité -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://herrmed-01.github.io/Portfolio/thankyou.html">
+
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label>Subject</label>
+            <input type="text" name="subject" required>
+        </div>
+
+        <div class="form-group">
+            <label>Message</label>
+            <textarea name="message" required></textarea>
+        </div>
+
+        <button type="submit">Send Message</button>
+
+    </form>
+</section>
+
 
 
     <!-- Footer -->
@@ -260,27 +257,6 @@
 
     <!-- Link to javaScript file -->
     <script src="script.js"></script>
-    <script type="module">
-  // Import the functions you need from the SDKs you need
-import { initializeApp } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-app.js";
-import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-    apiKey: "AIzaSyAyIC2zKKpMpr9oBwnwI6LIMD8Ov3965UA",
-    authDomain: "med-portfolio-01.firebaseapp.com",
-    projectId: "med-portfolio-01",
-    storageBucket: "med-portfolio-01.firebasestorage.app",
-    messagingSenderId: "321907101138",
-    appId: "1:321907101138:web:d1236f849ceb8a9be64c0b",
-    measurementId: "G-0LYE3ZFYT8"
-};
-  // Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-</script>
 </body>
+
 </html>
