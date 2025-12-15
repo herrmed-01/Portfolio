@@ -211,36 +211,40 @@
 <section class="contact" id="contact">
     <h2 class="section-title">Contact Me</h2>
 
-    <form action="https://formsubmit.co/mohamed.elwardi16@gmail.com" method="POST" class="contact-form">
-
-        <!-- Sécurité -->
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://herrmed-01.github.io/Portfolio/thankyou.html">
-
-        <div class="form-group">
-            <label>Name</label>
-            <input type="text" name="name" required>
-        </div>
-
-        <div class="form-group">
-            <label>Email</label>
-            <input type="email" name="email" required>
-        </div>
-
-        <div class="form-group">
-            <label>Subject</label>
-            <input type="text" name="subject" required>
-        </div>
-
-        <div class="form-group">
-            <label>Message</label>
-            <textarea name="message" required></textarea>
-        </div>
-
-        <button type="submit">Send Message</button>
-
-    </form>
-</section>
+        <form class="contact-form" action="https://formsubmit.co/mohamed.elwardi161@gmail.com" method="POST">
+    
+            <!-- Désactiver le captcha -->
+            <input type="hidden" name="_captcha" value="false">
+    
+            <!-- Redirection après envoi (optionnel) -->
+            <!-- <input type="hidden" name="_next" value="https://tonsite.com/merci.html"> -->
+    
+            <!-- Format du mail -->
+            <input type="hidden" name="_template" value="table">
+    
+            <div class="form-group">
+                <label class="form-label">Name</label>
+                <input type="text" name="name" class="form-input" required>
+            </div>
+    
+            <div class="form-group">
+                <label class="form-label">Email</label>
+                <input type="email" name="email" class="form-input" required>
+            </div>
+    
+            <div class="form-group">
+                <label class="form-label">Subject</label>
+                <input type="text" name="subject" class="form-input" required>
+            </div>
+    
+            <div class="form-group">
+                <label class="form-label">Message</label>
+                <textarea name="message" class="form-textarea" rows="5" required></textarea>
+            </div>
+    
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </section>
 
 
 
